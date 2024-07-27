@@ -11,8 +11,8 @@ function Hero() {
 	return (
 		<>
 			<div style={{position: "relative", overflowX: "hidden"}}>
-				<img src={SunAndMoon} alt="sun and moon image" className="rotate-opposite" height={720} style={{position: "absolute", right: "-360px", top: "-360px", rotate: "45deg"}} />
-				<div className='container full-vh hero d-flex flex-column justify-content-center' id="hero-section">
+				<img src={SunAndMoon} alt="sun and moon image" className="rotate-opposite" height={720} style={{position: "absolute", right: "-360px", top: "-360px", rotate: "45deg", zIndex: "1003"}} />
+				<div className='container full-vh hero d-flex flex-column justify-content-center' id="hero-section" style={{position: "relative", zIndex: "1004"}}>
 					<img src={HeroImg} width={128} alt="Avatar picture" className='rounded-circle' />
 					<h1 className='intro mt-4'>I'm William Chua 👋</h1>
 					<p>Full Stack Web Developer based in Cavite, Philippines</p>	
@@ -34,7 +34,7 @@ function Hero() {
 				</div>
 				<img src={Car} height={32} alt="car" style={{position: "absolute", bottom: "32px", left: "-76px"}} id="car" />
 			</div>
-			<div style={{height: "32px", backgroundImage: `url(${Grass})`, backgroundSize: "32px", backgroundRepeat: "repeat-x", marginTop: "-32px", zIndex: "1000"}} id='platform'></div>
+			<div style={{height: "32px", backgroundImage: `url(${Grass})`, backgroundSize: "32px", backgroundRepeat: "repeat-x", marginTop: "-32px", zIndex: "1005"}} id='platform'></div>
 		</>
 	)
 }
